@@ -1,4 +1,5 @@
-## This is the "long" version, which you would need if there isn't an appropriate environment
+## This is the "long" starting version, which you would need if there 
+## isn't an appropriate environment
 
 # Always start by importing Pedal
 from pedal import *

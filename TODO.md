@@ -1,0 +1,8 @@
+- [ ] Finish intro tutorial
+  - [ ] For each mistake/condition, add in a new slide and validate example.
+  - [ ] Also make tests for the tests so they can see the expected output
+- [ ] Add in unit_test docs to site
+  - [ ] Include documentation on new with style
+- [ ] Let's set up our example to deploy on gradescope
+- [ ] Show off some more advanced features
+  - [ ] Mocking a library
