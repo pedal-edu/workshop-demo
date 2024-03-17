@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Runs the first python file that the student submitted
+files=( /autograder/submission/*.py )
+pedal grade \
+        /autograder/source/validate.py \
+        "${files[0]}" \
+        --environment gradescope \
+        --output "/autograder/results/results.json"
