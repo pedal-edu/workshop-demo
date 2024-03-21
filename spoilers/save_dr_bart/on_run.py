@@ -2,7 +2,15 @@ from pedal import *
 
 suppress("syntax", "blank_source")
 
-student_name = get_model_info("user.name") or "Ada Bart"
+def set_instructions(message):
+    """
+    This is usually defined in the BlockPy environment, but since we're on the command line
+    we have to define it here instead.
+    """
+    print(message)
+
+# This is a BlockPy feature, not a Pedal feature! You can just hardcode your name for now.
+student_name = "Ada Bart"
 
 VIDEO_TEMPLATE = """<iframe width="400" height="300" 
     src="https://www.youtube.com/embed/{}autoplay=1&modestbranding=1&loop=1&controls=1"
@@ -68,7 +76,7 @@ else:
     
 if completed['intro']:
     if "open" not in get_program():
-        jseval('editor.components.dialog.show("NO ESCAPE", "THE EXIT IS DISABLED")')
+        print('NO ESCAPE! THE EXIT IS DISABLED!')
     if "The door refuses to open." in get_output():
         completed['open_door'] = True
         give_partial("+10%")
@@ -139,4 +147,3 @@ if completed['potion_instructions']:
             gently("Your `treat` function returns `'wait'` for one of the three animals. Remember, it needs to return `'keep'` or `'give'` for the three animals!", label="treat_returning_wait", title="Treat Function Incorrect")
         else:
             gently("Your `treat` function should only return `give` for one animal, and `keep` for two. Double check your conditionals and return values!", label="incorrect_treat", title="Treat Function Incorrect")
-                  
