@@ -1,3 +1,1 @@
-# Make Your Own!
-
-Write up a problem prompt, and then fill out the validate.py!
+Write a program called calctip.py that allows the user to enter the price of a meal and displays the amount the user should pay including an 20% tip.
