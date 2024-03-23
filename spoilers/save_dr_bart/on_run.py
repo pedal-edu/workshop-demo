@@ -1,3 +1,9 @@
+"""
+This is provided as an example of a much more complicated activity. It's actually meant
+to be run in the browser via BlockPy, so I recommend you check out the link in the `problem.md`
+file instead. 
+"""
+
 from pedal import *
 
 suppress("syntax", "blank_source")
