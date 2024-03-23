@@ -2,6 +2,8 @@
 
 If you are watching this at SIGCSE, I recommend not going too far ahead. I'll be going through the slides and code in the presentation.
 
+But if you want to, here's the link to the slides: <https://docs.google.com/presentation/d/1yYSopsVdpwiDtHC5rbnV3id5JXNogXaaihredEHnP1g/edit?usp=sharing>
+
 
 # Outline
 
